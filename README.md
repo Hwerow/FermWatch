@@ -42,10 +42,12 @@ Key parts
 
 # Acknowledgements
 This project would not have been possible without using libraries from Bodmer - TFT_eSPI screen, martin-ger - MQTT Broker, B Blanchon - ArduinoJson, tzapu - WiFiManger, NTPClient and the MultiMap for interpolation and others who are referenced in the code.
+# FermWatch Versions
+1.1 First Release
 
 ► I have achieved what I set out to do for the project, some compromises were made along the way, notably failing to get custom fonts to work but no worries.
 
-My YouTube channel, Buy Books, GitHub and website:  
+My YouTube channel, Buy my Books, GitHub and website:  
 \------------------------------------------------------------------  
 - https://m.youtube.com/channel/UCRhjjWS5IFHzldBhO2kyVkw/featured   Tritun Books Channel
 - https://www.lulu.com/spotlight/prsymons  Books available Print on demand from Lulu
