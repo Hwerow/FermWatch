@@ -49,6 +49,7 @@ This project would not have been possible without using libraries from Bodmer - 
 ► I have achieved what I set out to do for the project, some compromises were made along the way, notably failing to get the AA fonts to work but no worries.
 
 # Future improvements 
+- Monitor amount of change of iSp angle/SG to assess the rate of fermentation
 - could be to use the touch screen of the ILI9341 
   - to select screen display  BPL, iSpindel
   - change settings in lieu of the BPL rotary switch?
