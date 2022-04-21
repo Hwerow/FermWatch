@@ -48,16 +48,16 @@ This project would not have been possible without using libraries from Bodmer - 
 
 ► I have achieved what I set out to do for the project, some compromises were made along the way, notably failing to get the AA fonts to work but no worries.
 
-# Future improvements could be to use the touch screen of the ILI9341 
+# Future improvements 
+could be to use the touch screen of the ILI9341 
  - to select screen display  BPL, iSpindel
  - change settings in lieu of the BPL rotary switch?
  - be able to change FermWatch config settings (F/C, SG/P, Temp Correction) on the fly  rather than restarting 
- 
- - use the on board ILI9341 SD card facility to hold fonts etc
+use the on board ILI9341 SD card facility to hold fonts etc
  - Migrate to ESP32 to get more memory for screen processing and enable use  AA fonts for cleaner screen presentation
  - report iSpindel gravity and temperature, possibly via iSpindHub
 
-My YouTube channel, Buy my Books, GitHub and website:  
+# My YouTube channel, Buy my Books, GitHub and website:  
 \------------------------------------------------------------------  
 - https://m.youtube.com/channel/UCRhjjWS5IFHzldBhO2kyVkw/featured   Tritun Books Channel
 - https://www.lulu.com/spotlight/prsymons  Books available Print on demand from Lulu
