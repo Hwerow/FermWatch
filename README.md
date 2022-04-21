@@ -50,9 +50,9 @@ This project would not have been possible without using libraries from Bodmer - 
 
 # Future improvements 
 - could be to use the touch screen of the ILI9341 
- - to select screen display  BPL, iSpindel
- - change settings in lieu of the BPL rotary switch?
- - be able to change FermWatch config settings (F/C, SG/P, Temp Correction) on the fly  rather than restarting 
+  - to select screen display  BPL, iSpindel
+  - change settings in lieu of the BPL rotary switch?
+  - be able to change FermWatch config settings (F/C, SG/P, Temp Correction) on the fly  rather than restarting 
 - use the on board ILI9341 SD card facility to hold fonts etc
 - Migrate to ESP32 to get more memory for screen processing and enable use  AA fonts for cleaner screen presentation
 - report iSpindel gravity and temperature locally, possibly via iSpindHub
