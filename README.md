@@ -34,11 +34,18 @@ Key parts
 - Getting the current data from the BF API is a 2 step process the first request is a single shot to get the fermenting batch id, recipe name, measured OG and estimated FG
 - The second request uses the batch id to get the batch iSpindel last readings  set for a 3 minute cycle, primarily to rotate the display  given the BF update cycle is 15 minutes
 - the display screens then alternate between BPL and iSp
-- Displays derived % ABV using the UK Tax Office adjustment factors cl 30.2 and 30.3 https://www.gov.uk/government/publications/excise-notice-226-beer-duty/excise-notice-226-beer-duty--2#calculation-strength 
+- Displays derived % ABV using the UK Tax Office adjustment factors cl 30.2 and 30.3 https://www.gov.uk/government/publications/excise-notice-226-beer-duty/excise-notice-226-beer-duty--2#calculation-strength Note that Brewfather appears to use an adjustment of 131.25
 # Options
 - Select Plato - default SG
 - Select Fahrenheit  - default Celsius
 - Select iSpindel SG 20°C approximate temperature correction - default none. 	An experimental function that modifies the displayed Present 	Gravity, Apparent Attenuation and %  	ABV values
+
+# Links
+- Base64 Encode  https://www.base64encode.org/ 
+- Postman   https://www.postman.com/ 
+- Get Fermenting batch from Brewfather  https://api.brewfather.app/v1/batches/?include=measuredOg,recipe.fgEstimated&status=Fermenting
+- Get Latest readings for batch https://api.brewfather.app/v1/batches/batch_id/readings/last  NB Change batch_id to suit your results
+- Flasher https://github.com/marcelstoer/nodemcu-pyflasher/releases
 
 # Acknowledgements
 This project would not have been possible without using libraries from Bodmer - TFT_eSPI screen, martin-ger - MQTT Broker, B Blanchon - ArduinoJson, tzapu - WiFiManger, NTPClient and the MultiMap for interpolation and others who are referenced in the code.
@@ -59,9 +66,9 @@ This project would not have been possible without using libraries from Bodmer - 
 - report iSpindel gravity and temperature locally, possibly via iSpindHub
 
 # My YouTube channel, Buy my Books, GitHub and website:  
-\------------------------------------------------------------------  
+\-------------------------------------------------------------------------------------------------  
 - https://m.youtube.com/channel/UCRhjjWS5IFHzldBhO2kyVkw/featured   Tritun Books Channel
 - https://www.lulu.com/spotlight/prsymons  Books available Print on demand from Lulu
 - https://github.com/Hwerow  This 
 - https://prstemp.wixsite.com/tritun-books   Website  
-\------------------------------------------------------------------
+\-------------------------------------------------------------------------------------------------
