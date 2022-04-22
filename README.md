@@ -19,7 +19,7 @@ The FermWatch project was very much inspired by ZeSlammy’s iSpindHub project w
 
 Initially, I just wanted a bigger screen for my BrewPiLess, but interfacing the ILI9341 proved to be too hard for me. Then I developed FermWatch as a standalone unit  to show BrewPiLess data and iSpindel data from Brewfather plus some derived functions. 
 # Software issues and change requests
-Please do not expect any form of support. I am a brewer not a coder/programmer! It has taken me 4 months to reach this stage where I think that it is working and stable enough to release. It works with the hardware, as described – it may not work with your parts/setup! 
+Please do not expect any form of support. I am a brewer not a coder/programmer! It has taken me 4 months to reach this stage where I think that it is working and stable enough to release. It works with the hardware, as described. 
 # Main Prerequisites
 - D1 Mini 8266 with 2.8" TFT ILI9341 320 * 240 (lots of these out there just don't buy a shield!) NB This project does not work with an ESP32!
 - BrewPiLess System [BPL] Software v4.1r4 by Vitotai  https://github.com/vitotai/BrewPiLess
