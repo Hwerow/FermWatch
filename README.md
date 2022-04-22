@@ -11,7 +11,7 @@ Just want to see where your latest brew is up to?
 The video Tutorial has step by step instructions and describes how to make a FermWatch with a D1 Mini and a 2.8" TFT ILI9341 to monitor your fermentation – in the shed, beside the bed, wherever your local network extends!
 
   
-Link to video:   
+Link to video:   https://youtu.be/AYtplzlXTfo 
 
 **Important** I am a brewer and author, I write books on recreating historic beers - **NOT a PROGRAMMER** - as will be obvious from inspection of the code.
 # Project
