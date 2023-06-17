@@ -53,13 +53,14 @@ Key parts
 This project would not have been possible without using libraries from Bodmer - TFT_eSPI screen, martin-ger - MQTT Broker, B Blanchon - ArduinoJson, tzapu - WiFiManger, NTPClient and the MultiMap for interpolation and others who are referenced in the code.
 
 # FermWatch Versions
-1.2.1 Apparently Not all Authorisations are the same length
+Apparently Not all Authorisations are the same length
 1.2  Maintenance update
      Added hostname, as having to read the chipid or remembering the IP was a pain, fixed pressure display from BPL now Bpressure 
      Minor display formatting issues corrected
      Display longer brew names up to 36 characters long without wordwrapping messing up the screen display
      Changed bpl to bpl42 all - Lower case you will need to set in BrewPiLess Mqtt.
      Change Brewfather from v1 to v2 per API changes Commented out reset settings every time! line 972
+     and apparently, Not all Authorisations are the same length
 1.1 First Release
 
 ► I have achieved what I set out to do for the project, some compromises were made along the way, notably failing to get the AA fonts to work but no worries.
