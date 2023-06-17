@@ -16,8 +16,10 @@ Link to video:   https://youtu.be/AYtplzlXTfo
 **Important** I am a brewer and author, I write books on recreating historic beers - **NOT a PROGRAMMER** - as will be obvious from inspection of the code.
 # Project
 The FermWatch project was very much inspired by ZeSlammy’s iSpindHub project where the iSpindel readout was displayed on a small tft screen. https://github.com/ZeSlammy/iSpindHub
-
 Initially, I just wanted a bigger screen for my BrewPiLess, but interfacing the ILI9341 proved to be too hard for me. Then I developed FermWatch as a standalone unit  to show BrewPiLess data and iSpindel data from Brewfather plus some derived functions. 
+# Limitations
+FermWatch works with **ONE** batch in Brewfather, with its status set to **Fermenting**
+If you attach your iSpindel to BrewPiless then forward to Brewfather, rather than forwarding to Brewfather direct you might get interesting results!
 # Software issues and change requests
 Please do not expect any form of support. I am a brewer not a coder/programmer! It has taken me 4 months to reach this stage where I think that it is working and stable enough to release. It works with the hardware, as described. 
 # Main Prerequisites
@@ -38,19 +40,20 @@ Key parts
 # Options
 - Select Plato - default SG
 - Select Fahrenheit  - default Celsius
-- Select iSpindel SG 20°C approximate temperature correction - default none. 	An experimental function that modifies the displayed Present 	Gravity, Apparent Attenuation and %  	ABV values
+- Select iSpindel SG 20°C approximate temperature correction - default none. 	An experimental function that modifies the displayed Present 	Gravity, Apparent Attenuation and % ABV values
 
 # Links
 - Base64 Encode  https://www.base64encode.org/ 
 - Postman   https://www.postman.com/ 
-- Get Fermenting batch from Brewfather  https://api.brewfather.app/v1/batches/?include=measuredOg,recipe.fgEstimated&status=Fermenting
-- Get Latest readings for batch https://api.brewfather.app/v1/batches/batch_id/readings/last  NB Change batch_id to suit your results
+- Get Fermenting batch from Brewfather  https://api.brewfather.app/v2/batches/?include=measuredOg,recipe.fgEstimated&status=Fermenting
+- Get the Latest readings for batch https://api.brewfather.app/v2/batches/batch_id/readings/last  NB Change batch_id to suit your results
 - Flasher https://github.com/marcelstoer/nodemcu-pyflasher/releases
 
 # Acknowledgements
 This project would not have been possible without using libraries from Bodmer - TFT_eSPI screen, martin-ger - MQTT Broker, B Blanchon - ArduinoJson, tzapu - WiFiManger, NTPClient and the MultiMap for interpolation and others who are referenced in the code.
 
 # FermWatch Versions
+1.2.1 Apparently Not all Authorisations are the same length
 1.2  Maintenance update
      Added hostname, as having to read the chipid or remembering the IP was a pain, fixed pressure display from BPL now Bpressure 
      Minor display formatting issues corrected
@@ -68,9 +71,9 @@ This project would not have been possible without using libraries from Bodmer - 
   - change settings in lieu of the BPL rotary switch?
   - be able to change FermWatch config settings (F/C, SG/P, Temp Correction) on the fly  rather than restarting 
 - use the on board ILI9341 SD card facility to hold fonts etc
-- Migrate to ESP32 to get more memory for screen processing and enable use  AA fonts for cleaner screen presentation
-- report iSpindel gravity and temperature locally, possibly via iSpindHub
-
+- Migrate to ESP32 to get more memory for screen processing and use TrueType fonts for cleaner screen presentation
+- A separate BPL only FermWatch
+  
 # My YouTube channel, Buy my Books, GitHub and website:  
 \-------------------------------------------------------------------------------------------------  
 - https://m.youtube.com/channel/UCRhjjWS5IFHzldBhO2kyVkw/featured   Tritun Books Channel
