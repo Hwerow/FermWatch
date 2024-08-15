@@ -1,4 +1,7 @@
 # FermWatch - 8266
+
+******** I suggest using FermWatch32 rather than this version.  ******
+
 Monitoring fermentation with Brewfather®, BrewPiLess and iSpindel or "No phone No worries!"
 
 ![bpl screen IMG_1322ssm](https://user-images.githubusercontent.com/38124525/164382814-4af067e7-b47f-446a-a56a-18721918490c.JPG) ![isp screen IMG_1320sm](https://user-images.githubusercontent.com/38124525/164383131-8af7bd72-f092-484e-ae2c-08549dafd988.JPG)
